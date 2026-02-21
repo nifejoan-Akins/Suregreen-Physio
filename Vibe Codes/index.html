@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suregreen Physiotherapy and Wellness Clinic</title>
+    <style> 
+        * { font-family: Arial, sans-serif; }
+        body { margin:0; color:#333; }
+        header { background:#2e8b57; color:#fff; padding:20px; display:flex; align-items:center; justify-content:center; gap:20px; }
+        nav { display:flex; justify-content:center; background:#1f6f45; }
+        nav a { color:#fff; padding:15px 20px; text-decoration:none; font-weight:bold; cursor:pointer; }
+        nav a:hover { background:#145c38; }
+        section { padding:40px; display:none; }
+        .hero {
+            background-image: url(IMAGES/Physiotherapy.jfif);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section.active { display:block; }
+        h2 { color:#2e8b57; }
+        .services { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:20px; }
+        .card { background:#fff; padding:15px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center; }
+        footer { background:#1f6f45; color:#fff; text-align:center; padding:15px; margin-top:40px; }
+        form { max-width:500px; margin:auto; }
+        input, textarea, button { width:100%; padding:10px; margin:10px 0; }
+        button { background:#2e8b57; color:#fff; border:none; cursor:pointer; }
+        button:hover { background:#1f6f45; }
+        p { line-height:1.6;}
+
+        /* Slider */
+        .slider { background:#fff; padding:30px; margin:30px 0; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+        .slide { display:none; text-align:center; }
+        .slide.active { display:block; }
+    </style>
+</head>
+<body>
+<header>
+    <img src="IMAGES/logo.jpg" alt="Suregreen Physiotherapy Logo" style="height:80px; width:auto; background:#fff; padding:8px; border-radius:8px; vertical-align: middle;">
+    <div>
+        <h1 style=" max-width: 900px;">Suregreen Physiotherapy and Wellness Clinic</h1>
+        <p>Empathy • Excellence • Efficiency</p>
+    </div>
+</header>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+<section id="home" class="active hero">
+    <p style="font-size:18px; max-width:900px; margin:auto;">
+        Welcome to <strong>Suregreen Physiotherapy and Wellness Clinic</strong>, where your recovery, mobility, and overall well‑being are our top priorities. We provide professional, evidence‑based physiotherapy services tailored to help you relieve pain, restore movement, and achieve a healthier, more active life in a supportive and caring environment.
+    </p> 
+
+    <div style="margin-top:40px;">
+        <h2>Why Choose Us</h2>
+        <div class="services">
+            <div class="card">
+                <img src="IMAGES/Medical Qualified Professionals.jfif" alt="Medical Qualified Professionals">
+                <h4>Medical Qualified Professionals</h4>
+                <p>Our clinic is staffed by licensed and experienced physiotherapists committed to high standards of care.</p>
+            </div>
+            <div class="card">
+                <img src="IMAGES/Patient-Centered Care.jfif" alt="Patient-Centered Care">
+                <h4>Patient-Centered Care</h4>
+                <p>Every treatment plan is tailored to meet individual patient needs and recovery goals.</p>
+            </div>
+            <div class="card">
+                <img src="IMAGES/Modern Medical Techniques.jfif" alt="Modern Medical Techniques">
+                <h4>Modern Medical Techniques</h4>
+                <p>We use evidence-based methods and modern equipment to ensure effective rehabilitation.</p>
+            </div>
+            <div class="card">
+                <img src="IMAGES/Comfortable Environment.jfif" alt="Comfortable Environment">
+                <h4>Comfortable Environment</h4>
+                <p>Our clinic provides a welcoming and supportive atmosphere for healing and wellness.</p>
+            </div>
+        </div>
+    </div> 
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Suregreen Physiotherapy and Wellness Clinic is dedicated to evidence-based physiotherapy care. Our licensed physiotherapists focus on holistic rehabilitation, injury prevention, and overall wellness.</p>
+    <!-- Vision & Mission Slider -->
+    <div class="slider">
+        <div class="slide active">
+            <h3>Our Vision</h3>
+            <p>To be topmost healthcare provider in Nigeria, dedicated to improving and influencing the human experience holistically.</p>
+            </div>
+        <div class="slide active">
+            <h3>Our Mission</h3>
+            <p>To achieve wholeness through the delivery quality, best-available, and individualized
+            therapeutic services to our clients.</p>    
+        </div>
+    </div>
+</section>
+<section id="services">
+    <h2>Our Services</h2>
+    <p>We offer comprehensive physiotherapy services tailored to your needs.</p>
+    <div class="services">
+        <div class="card">
+            <img src="IMAGES/Musculoskeletal Physiotherapy.jfif" alt="Musculoskeletal Physiotherapy" style="width:100%; border-radius:6px;">
+            <h4>Musculoskeletal Physiotherapy</h4>
+            <p>Assessment and treatment of conditions affecting muscles, joints, ligaments, and bones.</p>
+        </div>
+        <div class="card">
+            <img src="IMAGES/Sports Injury Management.jfif" alt="Sports Physiotherapy" style="width:100%; border-radius:6px;">
+            <h4>Sports Injury Management</h4>
+            <p>Specialized care for sports injuries, performance recovery, and prevention.</p>
+        </div>
+        <div class="card">
+            <img src="IMAGES/Neurological Rehabilitation.jfif" alt="Neurological Rehab" style="width:100%; border-radius:6px;">
+            <h4>Neurological Rehabilitation</h4>
+            <p>Rehabilitation for conditions like stroke or spinal cord injury to improve mobility and independence.</p>
+        </div>
+        <div class="card">
+            <img src="IMAGES/Women’s Health Physiotherapy.jfif" alt="Women Health" style="width:100%; border-radius:6px;">
+            <h4>Women’s Health Physiotherapy</h4>
+            <p>Pelvic floor rehab, postnatal recovery, and women’s wellness care.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you would like to book an appointment or make an enquiry, please fill out the form below and we will get back to you as soon as possible.</p>
+
+    <form method="post" action="contact.php" style="background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+        <label for="name"><strong>Full Name</strong></label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email"><strong>Email Address</strong></label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+        <label for="phone"><strong>Phone Number</strong></label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+        <label for="message"><strong>Message</strong></label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message or appointment request" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div style="margin-top:30px;">
+        <p><strong>Phone:</strong> +234 806 772 6715</p>
+        <p><strong>Email:</strong> suregreenphysio@gmail.com</p>
+        <p><strong>Address:</strong> Suregreen Physiotherapy and Wellness Clinic, 12 Wellness Avenue, Lagos, Nigeria.</p>
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const id = link.getAttribute('href').substring(1);
+            document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+            const target = document.getElementById(id);
+            if (target) target.classList.add('active');
+            window.scrollTo(0,0);
+        });
+    });
+
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+    if (slides.length > 1) {
+        setInterval(() => {
+            slides.forEach(s => s.classList.remove('active'));
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }, 4000);
+    }
+</script>
+
+<footer style="background:#1f6f45; color:#fff; padding:30px 20px; text-align:center;">
+    <h3>Suregreen Physiotherapy and Wellness Clinic</h3>
+    <p>12 Wellness Avenue, Lagos, Nigeria</p>
+    <p>Phone: +234 806 772 6715 | Email: suregreenphysio@gmail.com</p>
+    <p style="margin-top:10px; font-size:14px;">&copy; Suregreen Physiotherapy and Wellness Clinic. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
